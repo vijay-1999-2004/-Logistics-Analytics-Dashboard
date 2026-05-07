@@ -1,0 +1,3365 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='logistics_dataset_10000_rows' inline='true' name='federated.144pljp00wv3x51fntvpp1dfacjw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='logistics_dataset_10000_rows' name='textscan.1ugn9or0jdgs2g1a2rdof1tzgplo'>
+            <connection class='textscan' directory='C:/Users/VIJAY/Downloads' filename='logistics_dataset_10000_rows.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ugn9or0jdgs2g1a2rdof1tzgplo' name='logistics_dataset_10000_rows.csv' table='[logistics_dataset_10000_rows#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Shipment_ID' ordinal='0' />
+            <column datatype='string' name='Route_Type' ordinal='1' />
+            <column datatype='real' name='Distance_km' ordinal='2' />
+            <column datatype='real' name='Delivery_Time_min' ordinal='3' />
+            <column datatype='integer' name='On_Time' ordinal='4' />
+            <column datatype='real' name='Delay_Minutes' ordinal='5' />
+            <column datatype='string' name='Vehicle_Type' ordinal='6' />
+            <column datatype='string' name='Day_of_Week' ordinal='7' />
+            <column datatype='string' name='Region' ordinal='8' />
+            <column datatype='real' name='Fuel_Cost' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipment_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shipment_ID]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Shipment_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Route_Type]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Route_Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance_km</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Distance_km]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Distance_km</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery_Time_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery_Time_min]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Delivery_Time_min</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>On_Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[On_Time]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>On_Time</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay_Minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delay_Minutes]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Delay_Minutes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Type]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Vehicle_Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_of_Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day_of_Week]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Day_of_Week</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel_Cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel_Cost]</local-name>
+            <parent-name>[logistics_dataset_10000_rows.csv]</parent-name>
+            <remote-alias>Fuel_Cost</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='On-Time Delivery %' datatype='real' name='[Calculation_0343654818123776]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([On_Time]) / COUNT([Shipment_ID])' />
+      </column>
+      <column caption='Total Shipments' datatype='integer' name='[Calculation_0343654818754561]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Shipment_ID])' />
+      </column>
+      <column caption='Avg Delivery Time' datatype='real' name='[Calculation_0343654818897922]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Delivery_Time_min])' />
+      </column>
+      <column caption='Total Distance' datatype='real' name='[Calculation_0343654819004419]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Distance_km])' />
+      </column>
+      <column caption='Delay %' datatype='real' default-format='p0.000%' name='[Calculation_0343654819246084]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1 - [Calculation_0343654818123776]' />
+      </column>
+      <column caption='Avg(0)' datatype='real' name='[Calculation_0343654823362577]' role='measure' type='quantitative' visual-totals='Avg'>
+        <calculation class='tableau' formula='Avg(0)' />
+      </column>
+      <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+      <column caption='Delay Minutes' datatype='real' name='[Delay_Minutes]' role='measure' type='quantitative' />
+      <column caption='Delivery Time min' datatype='real' name='[Delivery_Time_min]' role='measure' type='quantitative' />
+      <column caption='Distance km' datatype='real' name='[Distance_km]' role='measure' type='quantitative' />
+      <column caption='Fuel Cost' datatype='real' name='[Fuel_Cost]' role='measure' type='quantitative' />
+      <column caption='On Time' datatype='integer' name='[On_Time]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+      <column caption='Vehicle Type' datatype='string' name='[Vehicle_Type]' role='dimension' type='nominal' />
+      <column caption='logistics_dataset_10000_rows.csv' datatype='table' name='[__tableau_internal_object_id__].[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]' role='measure' type='quantitative' />
+      <column-instance column='[Delay_Minutes]' derivation='Avg' name='[avg:Delay_Minutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Distance_km]' derivation='Avg' name='[avg:Distance_km:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shipment_ID]' derivation='Count' name='[cnt:Shipment_ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shipment_ID]' derivation='Count' name='[cum:cnt:Shipment_ID:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Shipment_ID]' derivation='Sum' name='[cum:sum:Shipment_ID:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_0343654818123776]' derivation='User' name='[cum:usr:Calculation_0343654818123776:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Shipment_ID]' derivation='Count' name='[pcto:cnt:Shipment_ID:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Shipment_ID]' derivation='Sum' name='[pcto:sum:Shipment_ID:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Distance_km]' derivation='Sum' name='[sum:Distance_km:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shipment_ID]' derivation='Sum' name='[sum:Shipment_ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0343654818123776]' derivation='User' name='[usr:Calculation_0343654818123776:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Shipment_ID]' derivation='Sum' name='[win:sum:Shipment_ID:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <group caption='Action (Day of Week)' hidden='true' name='[Action (Day of Week)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Day_of_Week]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Day of Week,Region)' hidden='true' name='[Action (Day of Week,Region)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Day_of_Week]' />
+          <groupfilter function='level-members' level='[Region]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Route Type)' hidden='true' name='[Action (Route Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Route_Type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/VIJAY/AppData/Local/Temp/TableauTemp/#TableauTemp_1dgphlw0tpb8co14i0zpt08oxfhv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/10/2026 02:06:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Shipment_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Shipment_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipment_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Route_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Route_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Route_Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distance_km</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Distance_km]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distance_km</remote-alias>
+              <ordinal>2</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7204</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery_Time_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delivery_Time_min]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery_Time_min</remote-alias>
+              <ordinal>3</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8804</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>On_Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[On_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>On_Time</remote-alias>
+              <ordinal>4</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay_Minutes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delay_Minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay_Minutes</remote-alias>
+              <ordinal>5</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5925</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day_of_Week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day_of_Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day_of_Week</remote-alias>
+              <ordinal>7</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>8</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuel_Cost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fuel_Cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuel_Cost</remote-alias>
+              <ordinal>9</ordinal>
+              <family>logistics_dataset_10000_rows.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Route_Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Highway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Urban&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rural&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk]:1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:usr:Calculation_0343654818123776:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818123776:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:cnt:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[pcto:cnt:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[pcto:sum:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[win:sum:Shipment_ID:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Distance_km:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]:1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='logistics_dataset_10000_rows.csv' id='logistics_dataset_10000_rows.csv_87F95627B2E543E1B34D96AB3AC4762F'>
+            <properties context=''>
+              <relation connection='textscan.1ugn9or0jdgs2g1a2rdof1tzgplo' name='logistics_dataset_10000_rows.csv' table='[logistics_dataset_10000_rows#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Shipment_ID' ordinal='0' />
+                  <column datatype='string' name='Route_Type' ordinal='1' />
+                  <column datatype='real' name='Distance_km' ordinal='2' />
+                  <column datatype='real' name='Delivery_Time_min' ordinal='3' />
+                  <column datatype='integer' name='On_Time' ordinal='4' />
+                  <column datatype='real' name='Delay_Minutes' ordinal='5' />
+                  <column datatype='string' name='Vehicle_Type' ordinal='6' />
+                  <column datatype='string' name='Day_of_Week' ordinal='7' />
+                  <column datatype='string' name='Region' ordinal='8' />
+                  <column datatype='real' name='Fuel_Cost' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.144pljp00wv3x51fntvpp1dfacjw'>
+      <datasources>
+        <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+        <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+        <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+        <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Fri&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Mon&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Sat&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Sun&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Thu&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Tue&quot;' />
+          <groupfilter function='member' level='[none:Day_of_Week:nk]' member='&quot;Wed&quot;' />
+        </groupfilter>
+        <target field='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Region:nk]' member='&quot;East&quot;' />
+          <groupfilter function='member' level='[none:Region:nk]' member='&quot;North&quot;' />
+          <groupfilter function='member' level='[none:Region:nk]' member='&quot;South&quot;' />
+          <groupfilter function='member' level='[none:Region:nk]' member='&quot;West&quot;' />
+        </groupfilter>
+        <target field='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Route_Type:nk]' member='&quot;Highway&quot;' />
+          <groupfilter function='member' level='[none:Route_Type:nk]' member='&quot;Rural&quot;' />
+          <groupfilter function='member' level='[none:Route_Type:nk]' member='&quot;Urban&quot;' />
+        </groupfilter>
+        <target field='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_612B39150079406F8AC7BCA89BC7BCF7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Heat' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_AD591D166A444D66BFD846B8014B4684]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Trend (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_C3BD68EC9564496C94DD1172E6AFC933]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Route' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_C76DD2FA0CD246418D48927243038A7D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Sheet 12' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Delay Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>Average Delay</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Avg Delivery Time' datatype='real' name='[Calculation_0343654818897922]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Delivery_Time_min])' />
+            </column>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='Delivery Time min' datatype='real' name='[Delivery_Time_min]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0343654818897922]' derivation='User' name='[usr:Calculation_0343654818897922:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='wrap' data-class='subtotal' value='off' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818897922:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818897922:qk]</run>
+                <run bold='true' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{130BDBD8-02D3-437E-B5F3-772AB144DBC0}' />
+    </worksheet>
+    <worksheet name='Delay %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='On-Time Delivery %' datatype='real' name='[Calculation_0343654818123776]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([On_Time]) / COUNT([Shipment_ID])' />
+            </column>
+            <column caption='Delay %' datatype='real' default-format='p0.000%' name='[Calculation_0343654819246084]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1 - [Calculation_0343654818123776]' />
+            </column>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='On Time' datatype='integer' name='[On_Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0343654819246084]' derivation='User' name='[usr:Calculation_0343654819246084:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654819246084:qk]' value='*.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='wrap' data-class='subtotal' value='off' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654819246084:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654819246084:qk]</run>
+                <run bold='true' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{68EFE166-80C1-4094-BE76-D6DC51A9D59C}' />
+    </worksheet>
+    <worksheet name='Donut'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>On Time Delivery</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Avg(0)' datatype='real' name='[Calculation_0343654823362577]' role='measure' type='quantitative' visual-totals='Avg'>
+              <calculation class='tableau' formula='Avg(0)' />
+            </column>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='On Time' datatype='integer' name='[On_Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[On_Time]' derivation='Sum' name='[sum:On_Time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0343654823362577]' derivation='User' name='[usr:Calculation_0343654823362577:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:On_Time:qk]' max='7999' min='7999' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e9e1</color>
+                <color>#f2e2d2</color>
+                <color>#f3dbc3</color>
+                <color>#f4d3b3</color>
+                <color>#f5cca4</color>
+                <color>#f5c494</color>
+                <color>#f6bd84</color>
+                <color>#f7b575</color>
+                <color>#f8ad65</color>
+                <color>#f9a655</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:On_Time:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk] + [federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654823362577:qk])</cols>
+      </table>
+      <simple-id uuid='{5FA03DD3-8F18-4833-B6E1-FCF5E0639FED}' />
+    </worksheet>
+    <worksheet name='Heat'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>Shipments by Region &amp; Day</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipment_ID]' derivation='Sum' name='[sum:Shipment_ID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Shipment_ID:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Shipment_ID:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Shipment_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{3ED48A32-5560-4A44-B94F-3736506F282E}' />
+    </worksheet>
+    <worksheet name='On Time %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='On-Time Delivery %' datatype='real' name='[Calculation_0343654818123776]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([On_Time]) / COUNT([Shipment_ID])' />
+            </column>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='On Time' datatype='integer' name='[On_Time]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0343654818123776]' derivation='User' name='[usr:Calculation_0343654818123776:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818123776:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='wrap' data-class='subtotal' value='off' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818123776:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818123776:qk]</run>
+                <run bold='true' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC931489-3C3C-413A-93B3-460665F6BF22}' />
+    </worksheet>
+    <worksheet name='Route'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>Shipments by Route</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Shipment_ID]' derivation='Count' name='[cnt:Shipment_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' scope='cols' value='false' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' value='*#,##0.00;(#,##0.00)' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.57071822881698608' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.7734806537628174' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</rows>
+        <cols>([federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk] + [federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk])</cols>
+      </table>
+      <simple-id uuid='{BCEA2C38-CE9C-45E3-8BCB-1D33F51FB288}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CC000A02-4149-49DA-88A3-CA93DBE2ACF7}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>Average Distance by Days</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='Delay Minutes' datatype='real' name='[Delay_Minutes]' role='measure' type='quantitative' />
+            <column caption='Distance km' datatype='real' name='[Distance_km]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Delay_Minutes]' derivation='Avg' name='[avg:Delay_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Distance_km]' derivation='Avg' name='[avg:Distance_km:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='level-members' level='[Day_of_Week]' user:ui-action-filter='[Action2_AD591D166A444D66BFD846B8014B4684]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]' field-type='quantitative' fold='true' max='806.07333171070923' min='-1.7053025658242404e-13' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk]' field-type='quantitative' max='164.06208437500021' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2303867340087891' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Delay_Minutes:qk] + [federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk])</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</cols>
+      </table>
+      <simple-id uuid='{DF1C5891-34D3-4F4C-9593-94782746FF33}' />
+    </worksheet>
+    <worksheet name='Sheet 12 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='Delay Minutes' datatype='real' name='[Delay_Minutes]' role='measure' type='quantitative' />
+            <column caption='Distance km' datatype='real' name='[Distance_km]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Delay_Minutes]' derivation='Count' name='[cnt:Delay_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Distance_km]' derivation='Count' name='[cnt:Distance_km:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipment_ID]' derivation='None' name='[none:Shipment_ID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' />
+              <size column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Shipment_ID:ok]' />
+              <lod column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Delay_Minutes:qk]</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Distance_km:qk]</cols>
+      </table>
+      <simple-id uuid='{B26E4703-4A73-4A78-BA3B-834DB88CA314}' />
+    </worksheet>
+    <worksheet name='Total Distance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='Distance km' datatype='real' name='[Distance_km]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Distance_km]' derivation='Sum' name='[sum:Distance_km:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='wrap' data-class='subtotal' value='off' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Distance_km:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='15'>&lt;</run>
+                <run bold='true' fontsize='15'>[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Distance_km:qk]</run>
+                <run bold='true' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B4DA8F15-46ED-4A7C-8DBF-99146EC709AB}' />
+    </worksheet>
+    <worksheet name='Total Shipments'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Total Shipments' datatype='integer' name='[Calculation_0343654818754561]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Shipment_ID])' />
+            </column>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0343654818754561]' derivation='User' name='[usr:Calculation_0343654818754561:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='wrap' data-class='subtotal' value='off' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818754561:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='16'>&lt;</run>
+                <run bold='true' fontsize='16'>[federated.144pljp00wv3x51fntvpp1dfacjw].[usr:Calculation_0343654818754561:qk]</run>
+                <run bold='true' fontsize='16'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{51653B82-1D35-4A79-B692-B4B5FADD27D2}' />
+    </worksheet>
+    <worksheet name='Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Shipment_ID]' derivation='Count' name='[cnt:Shipment_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='none' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</cols>
+      </table>
+      <simple-id uuid='{DD0C8675-A689-4F49-8831-5748D1E8E4AD}' />
+    </worksheet>
+    <worksheet name='Trend (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontsize='16'>Running Total Of Shipments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Shipment_ID]' derivation='Sum' name='[cum:sum:Shipment_ID:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]'>
+            <groupfilter function='member' level='[Day_of_Week]' member='&quot;Tue&quot;' user:ui-action-filter='[Action4_C76DD2FA0CD246418D48927243038A7D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_612B39150079406F8AC7BCA89BC7BCF7]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Day_of_Week]' />
+              <groupfilter function='level-members' level='[Region]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]'>
+            <groupfilter function='member' level='[Route_Type]' member='&quot;Highway&quot;' user:ui-action-filter='[Action3_C3BD68EC9564496C94DD1172E6AFC933]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Sun&quot;</bucket>
+              <bucket>&quot;Mon&quot;</bucket>
+              <bucket>&quot;Tue&quot;</bucket>
+              <bucket>&quot;Wed&quot;</bucket>
+              <bucket>&quot;Thu&quot;</bucket>
+              <bucket>&quot;Fri&quot;</bucket>
+              <bucket>&quot;Sat&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week,Region)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Day of Week)]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[Action (Route Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' scope='rows' value='true' />
+            <format attr='display' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' scope='rows' value='true' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='omit-on-special' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='none' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='none' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.5524861812591553' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk] + [federated.144pljp00wv3x51fntvpp1dfacjw].[cum:sum:Shipment_ID:qk])</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</cols>
+      </table>
+      <simple-id uuid='{D0599D4A-A3F6-4753-BC16-64069B8D9AB7}' />
+    </worksheet>
+    <worksheet name='scater'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_dataset_10000_rows' name='federated.144pljp00wv3x51fntvpp1dfacjw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.144pljp00wv3x51fntvpp1dfacjw'>
+            <column caption='Day of Week' datatype='string' name='[Day_of_Week]' role='dimension' type='nominal' />
+            <column caption='Delay Minutes' datatype='real' name='[Delay_Minutes]' role='measure' type='quantitative' />
+            <column caption='Distance km' datatype='real' name='[Distance_km]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column aggregation='CountD' caption='Route Type' datatype='string' name='[Route_Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Shipment ID' datatype='integer' name='[Shipment_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Shipment_ID]' derivation='Count' name='[cnt:Shipment_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_of_Week]' derivation='None' name='[none:Day_of_Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route_Type]' derivation='None' name='[none:Route_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipment_ID]' derivation='None' name='[none:Shipment_ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Delay_Minutes]' derivation='Sum' name='[sum:Delay_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Distance_km]' derivation='Sum' name='[sum:Distance_km:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]</column>
+            <column>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Distance_km:qk]' field-type='quantitative' min='0.0' range-type='fixedminindependentmax' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' />
+              <size column='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' />
+              <lod column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Shipment_ID:ok]' />
+              <lod column='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Delay_Minutes:qk]</rows>
+        <cols>[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Distance_km:qk]</cols>
+      </table>
+      <simple-id uuid='{A85B7689-7445-4B83-8898-73C9079A3837}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='960' maxwidth='1120' minheight='960' minwidth='1120' sizing-mode='range' />
+      <zones>
+        <zone h='5104' id='3' type-v2='text' w='98929' x='804' y='1042'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='16'>🚚 Delivery &amp; Logistics Performance Dashboard</run>
+          </formatted-text>
+        </zone>
+        <zone h='12083' id='4' name='Total Shipments' w='21696' x='714' y='7188' />
+        <zone h='12083' id='5' name='Total Distance' w='23750' x='21250' y='6875' />
+        <zone h='10625' id='6' name='Average Delay Time' w='23304' x='43839' y='7188' />
+        <zone h='10104' id='7' name='Delay %' w='17768' x='67500' y='7083' />
+        <zone h='9063' id='8' name='On Time %' w='15893' x='82768' y='7188' />
+        <zone h='32813' id='9' name='Donut' w='31964' x='536' y='18021' />
+        <zone h='32396' id='11' name='Route' w='35268' x='32411' y='18854' />
+        <zone h='31667' id='12' name='Heat' w='35089' x='65089' y='18958' />
+        <zone h='16250' id='14' name='Trend' w='97857' x='1786' y='50938' />
+        <zone h='30521' id='17' name='Sheet 12' w='53036' x='46607' y='67917' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='20' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='5104' id='3' type-v2='text' w='98929' x='804' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='16'>🚚 Delivery &amp; Logistics Performance Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='116' h='12083' id='5' is-fixed='true' name='Total Distance' w='23750' x='21250' y='6875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='97' h='10104' id='7' is-fixed='true' name='Delay %' w='17768' x='67500' y='7083'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='116' h='12083' id='4' is-fixed='true' name='Total Shipments' w='21696' x='714' y='7188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='102' h='10625' id='6' is-fixed='true' name='Average Delay Time' w='23304' x='43839' y='7188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='87' h='9063' id='8' is-fixed='true' name='On Time %' w='15893' x='82768' y='7188'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32813' id='9' is-fixed='true' name='Donut' w='31964' x='536' y='18021'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32396' id='11' is-fixed='true' name='Route' w='35268' x='32411' y='18854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31667' id='12' is-fixed='true' name='Heat' w='35089' x='65089' y='18958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='156' h='16250' id='14' is-fixed='true' name='Trend' w='97857' x='1786' y='50938'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30521' id='17' is-fixed='true' name='Sheet 12' w='53036' x='46607' y='67917'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BD34B36C-1721-4F1B-91DA-37F2DE44EB64}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='960' maxwidth='1220' minheight='960' minwidth='1220' sizing-mode='range' />
+      <zones>
+        <zone h='10521' id='9' name='Total Shipments' w='20246' x='1066' y='8125' />
+        <zone h='10729' id='10' name='Total Distance' w='20328' x='21721' y='8229' />
+        <zone h='10313' id='11' name='Average Delay Time' w='19262' x='64836' y='8125' />
+        <zone h='10521' id='12' name='On Time %' w='21721' x='42459' y='7708' />
+        <zone h='10729' id='13' name='Delay %' w='15246' x='84180' y='8021' />
+        <zone h='29583' id='14' name='Route' w='33279' x='1066' y='19792' />
+        <zone h='30104' id='15' name='Trend (2)' w='40164' x='59508' y='19583' />
+        <zone h='34063' id='17' name='Heat' w='53525' x='246' y='51458' />
+        <zone h='29583' id='18' name='Donut' w='26393' x='34836' y='19792' />
+        <zone h='37083' id='20' name='Sheet 12' w='44344' x='53770' y='50833' />
+        <zone h='6354' id='21' type-v2='text' w='81311' x='8852' y='313'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='16'>🚚 Delivery &amp; Logistics Performance Dashboard</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98334' id='22' param='vert' type-v2='layout-flow' w='98688' x='656' y='833'>
+                <zone h='6354' id='21' type-v2='text' w='81311' x='8852' y='313'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Benton Sans Book' fontsize='16'>🚚 Delivery &amp; Logistics Performance Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='10521' id='12' is-fixed='true' name='On Time %' w='21721' x='42459' y='7708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='10729' id='13' is-fixed='true' name='Delay %' w='15246' x='84180' y='8021'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='10521' id='9' is-fixed='true' name='Total Shipments' w='20246' x='1066' y='8125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='99' h='10313' id='11' is-fixed='true' name='Average Delay Time' w='19262' x='64836' y='8125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='10729' id='10' is-fixed='true' name='Total Distance' w='20328' x='21721' y='8229'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30104' id='15' is-fixed='true' name='Trend (2)' w='40164' x='59508' y='19583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29583' id='14' is-fixed='true' name='Route' w='33279' x='1066' y='19792'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29583' id='18' is-fixed='true' name='Donut' w='26393' x='34836' y='19792'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37083' id='20' is-fixed='true' name='Sheet 12' w='44344' x='53770' y='50833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34063' id='17' is-fixed='true' name='Heat' w='53525' x='246' y='51458'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{50EF772C-8180-4C67-9106-77D9EF2B4BB1}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A90885FF-FE7D-4F04-BCD0-CED65C939929}' />
+    </window>
+    <window class='worksheet' name='Total Shipments'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B6CF4D51-0D01-4CF7-B1F8-5737E2B28341}' />
+    </window>
+    <window class='worksheet' name='Total Distance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{86DF6A93-1F0E-460B-A28E-34BB3209C46A}' />
+    </window>
+    <window class='worksheet' name='Average Delay Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8AA23D6E-877E-4E45-8346-3BFEB8F65F22}' />
+    </window>
+    <window class='worksheet' name='On Time %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C3E9C5D0-185C-49E7-AEFA-4DD0FB05A44E}' />
+    </window>
+    <window class='worksheet' name='scater'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4451ADF5-4EB5-4D48-9ECF-6D44A854439A}' />
+    </window>
+    <window class='worksheet' name='Delay %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D20432B9-776F-4801-83DB-CAA470298C51}' />
+    </window>
+    <window class='worksheet' name='Donut'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:On_Time:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C603E599-A6F9-4471-850B-BF620EBE58A0}' />
+    </window>
+    <window class='worksheet' name='Route'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D57AAE23-699A-4055-9BB9-2AD8A6568153}' />
+    </window>
+    <window class='worksheet' name='Heat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[sum:Shipment_ID:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{336D43A7-FEA5-47A1-ACA1-7290492A224F}' />
+    </window>
+    <window class='worksheet' name='Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{A88D4268-DF09-4A12-AC24-E3D776C77E50}' />
+    </window>
+    <window class='worksheet' name='Trend (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{B4EE86CA-BC1A-4506-952A-2242B7EEECDF}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' type='filter' />
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]' type='filter' />
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{ECE9CADF-96F6-489C-A971-6DCE81FF175D}' />
+    </window>
+    <window class='worksheet' name='Sheet 12 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' type='filter' />
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Region:nk]' type='filter' />
+            <card param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Shipment_ID:ok]' type='size' />
+            <card pane-specification-id='2' param='[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{2B19EC4E-72D0-4175-A260-BCBC59BCA755}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Delay Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Delay %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Donut'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Heat'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='On Time %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Route'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Total Distance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Shipments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0FEFF891-DDF8-49E5-B27C-AE273561DDA6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Average Delay Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Delay %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Donut'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Heat'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='On Time %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Route'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[cnt:Shipment_ID:qk]</field>
+                    <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Route_Type:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>478</value>
+                  <value>&quot;Highway&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]</field>
+                    <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[none:Day_of_Week:nk]</field>
+                    <field>[federated.144pljp00wv3x51fntvpp1dfacjw].[:Measure Names]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>742.62083682008347</value>
+                  <value>&quot;Tue&quot;</value>
+                  <value>&quot;[federated.144pljp00wv3x51fntvpp1dfacjw].[avg:Distance_km:qk]&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Total Distance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Shipments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trend (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{39EE2D02-61DF-49C5-A732-997B2F8DA784}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Heat' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Route' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAF8ElEQVR4nO3dS2/c1gGG4e8MZzhXjWSPZNkyGkMJ0D/QVVde9wdm403QVX9BgaK7oou0
+      aFOggJNe4GviyLpkJI3mTnJ4ugjQokDlWhnRUvu9z2oAEuecAfSCB6QohRhjFGCqdtMLAG4S
+      AcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAa
+      AcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcBavcrBY5GpePXbKqcA1hKq/OvQ5XSo6ZPHVQ0P
+      rI0tEKwRAKwRAKwRAKwRAKytFUCMUfyLMfwvu1IAz58/k/KRnr8+UZ4tdfTipd4Mh8pXpabj
+      C03nSxV5prPTM5WEgVvsz2/m+vQ3w6s9CMvzTIqlssVEf/jitT4a9JXnhV68fKVeQ3p1dKad
+      fktbraBv1NWPmlUtH1jPx9upfv2XydUCKLKFXr76Vt3+jtJ2Rx3NNJ7PVCtXensyUj2pq95s
+      6d6gpeeLsqq1A2v76nCpj7fTqz0JLleF8qJUmjYUoxRCVJYVaqQNrfJcIUlUC0G1EFRK0uyU
+      J8G4lfJV1Dwvr3YFqCV1NZPvP4cgSUHNZvr9sTT993MlcQ3AbdVIghpJwm1QeCMAWCMAWCMA
+      WCMAWKv0hZhYLJT/9ZdVDQ+srdIAgNuOLRCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs1ascPOYzZV/8vMop
+      gLVUG0A2V/b5p1VOAayFLRCsEQCsEQCsEQCsEQCsXTmAIl9qPJ6ojPHyc7KlivLy48BNijHq
+      8CLXZLm6+m3Qgzdfq9nZ0Nvj7/TRwwcKsVSpoOlsorQmnc9W6izPFPd+rEEVqwfWlK2inh4s
+      9fRg8QOeA9RqivlSzU5bB98eqraaaVFIG/ceaDmdqDafaCKpe/3rBq5Fs17T3U6iQTe5+hao
+      t7Gp7ft7CkWhEJeaZlF3t3d0f3tLq3ypaVGq199SOwlVrB1Y29ms0LOTpTbbiUKM79jMr6mc
+      DjV98riq4YG1cRcI1ggA1ggA1ggA1ggA1ip9H0AhSM2NSqcA1lHpbVDgtmMLBGsEAGsEAGsE
+      AGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsE
+      AGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsEAGsE
+      AGsEAGsEAGsEAGv1KgcvZ6eafvazKqcA1lJpAIpRyqaVTgGsgy0QrBEArBEArBEArBEArP3H
+      AGIsdXZ+rmw+1mg80Wg0/uex4cmxyvjB1gdcm6cHC332+akOL3JJ0q++Gl9yGzRGvXj2N3XS
+      htrbD5WGoOODrzXOpa006uj4SP3NTbW6fR2+HWpwp6M0kY6+G6nX62rvwR0dnxa63/uQXw94
+      t/1Bqr8fL/V2VOh+v6Gf7ncu3wL1twbavbetUK40mZwr1nqqh1L1ZlufPHqootbUsy+fqpas
+      dDFbaDS60HI2UrfT1O9+/6XuDDY/5HcD/qu8jNrp1XV4UWi8WOkXfzy/5AoQgnZ3d9Vu1NQo
+      pNXGhsanhzoczrX/6JHqzVSDraDG/r7u9tuaxbay8YlCvalef0u9jY5aSRA7Jdwmr4eZzmYr
+      fbKT6k/fzLW32VCIMb7Xz+nJ0YHqrb7ubL57X7OYjrVKmuq2UpXToaZPHl/L4oHrUsaoICmE
+      8P6/CrGzu/de57W6Gz90XcAHUQvhX59vcB3AjSMAWCMAWCMAWKv0fYCQ1JU8/EmVUwBree/b
+      oMD/I7ZAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsPYPHPuZpm8+mvoAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Trend (2)' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
