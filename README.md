@@ -23,24 +23,11 @@ Built an interactive analytics dashboard that provides visibility into delivery 
 ---
 
 ## 📁 Project Structure
-
-
-Logistics-Analytics-Dashboard/
-│
-├── data/
-│   └── logistics_dataset.csv
-│
-├── notebooks/
-│   └── logistics_analysis.ipynb
-│
-├── dashboard/
-│   └── logistics_dashboard.twbx
-│
-├── images/
-│   ├── dashboard1.png
-│
-└── README.md
-
+- **data/** → Contains logistics dataset files  
+- **notebooks/** → Python analysis and preprocessing notebooks  
+- **dashboard/** → Tableau dashboard files  
+- **images/** → Dashboard screenshots and visuals  
+- **README.md** → Project documentation and overview
 
 
 ## 📊 Key Analysis Performed
